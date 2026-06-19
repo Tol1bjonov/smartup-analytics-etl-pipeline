@@ -1,151 +1,110 @@
-# SmartUp ETL Pipeline
+# Smartup Sales Analytics
 
-API dan ma'lumot olib, tozalab, PostgreSQL ga yuklaydigan loyiha.
+## Project Overview
 
----
+This project was developed to automate sales data collection, transformation, storage, and visualization processes.
 
-## Loyiha strukturasi
+The solution includes:
 
-```
-Project(SmartUp)/
-│
-├── config.py          ← API va DB sozlamalari
-├── client.py          ← API dan ma'lumot olish
-├── loader.py          ← PostgreSQL ga yuklash
-├── main.py            ← ishga tushiruvchi
-│
-├── pipelines/
-│   ├── products.py    ← tayyor namuna
-│   ├── customers.py   ← shablon (sizniki)
-│   └── orders.py      ← shablon (sizniki)
-│
-└── CleanedData/       ← Excel fayllar saqlanadi
-```
+- ETL pipeline development using Python
+- Data cleaning and transformation
+- PostgreSQL data warehouse integration
+- Sales performance analysis
+- Interactive Power BI dashboards
+
+The project helps monitor sales performance across branches, managers, and trading activities.
 
 ---
 
-## O'rnatish
+## Business Goals
 
-### 1. Reponi clone qiling
-```bash
-git clone https://github.com/USERNAME/smartup-etl.git
-cd smartup-etl
-```
-
-### 2. Kerakli kutubxonalarni o'rnating
-```bash
-pip install -r requerements.txt
-```
-
-### 3. `auth.json` faylini yarating
-```bash
-# auth.json.example faylidan nusxa oling
-copy auth.json.example auth.json
-```
-Keyin `auth.json` faylini oching va o'z login/parolingizni kiriting:
-```json
-{
-    "username": "SIZNING_LOGINIZ",
-    "password": "SIZNING_PAROLINGIZ"
-}
-```
-
-### 4. `config.py` da DB ni sozlang
-```python
-DB_URL = "postgresql://postgres:PAROLINGIZ@localhost:5432/smartup"
-```
-
-### 5. Ishga tushiring
-```bash
-python main.py
-```
+- Track overall sales performance
+- Analyze branch-level sales
+- Evaluate manager performance
+- Monitor trade dynamics
+- Identify sales trends and anomalies
 
 ---
 
-## ETL jarayoni qanday ishlaydi
+## Tech Stack
 
-```
-1. EXTRACT  — API dan ma'lumot olinadi
-2. TRANSFORM — ma'lumot tozalanadi, to'g'ri turga o'tkaziladi
-3. LOAD     — Excel va PostgreSQL ga saqlanadi
-```
+### Data Engineering
 
-### Har bir pipeline shu 3 qadamdan iborat:
+- Python
+- Pandas
+- Requests
+- PostgreSQL
+- Apache Airflow
 
-```python
-# 1. Extract
-raw = fetch(url, headers, key="...")
+### Data Visualization
 
-# 2. Transform
-clean_data = build_...(raw)
+- Power BI
 
-# 3. Load
-clean_data.to_excel("CleanedData/....xlsx")
-save_to_db(clean_data, "jadval_nomi")
-```
+### Version Control
+
+- Git
+- GitHub
 
 ---
 
-## Yangi pipeline yozish — 4 qadam
+## ETL Workflow
 
-### 1-qadam — `config.py` ga endpoint qo'shing
-
-```python
-ENDPOINTS = {
-    "inventory": f"{BASE_URL}/mr/inventory$export",
-    "customers": f"{BASE_URL}/...",   # ← yangi endpoint
-}
-```
-
-### 2-qadam — `pipelines/customers.py` ni to'ldiring
-
-`products.py` ga qarab yozing.
-
-```python
-def build_customers(raw: pd.DataFrame) -> pd.DataFrame:
-    pass
-
-
-def run():
-    pass
-```
-
-### 3-qadam — `main.py` ga qo'shing
-
-```python
-from pipelines import products, customers
-
-products.run()
-customers.run()   # ← yangi qator
-```
-
-### 4-qadam — Tekshiring
-
-```bash
-python main.py
-```
-
-PostgreSQL da `SELECT * FROM customers LIMIT 10;` bilan natijani ko'ring.
+1. Extract sales data from source systems.
+2. Transform and clean the data.
+3. Load processed data into PostgreSQL.
+4. Refresh Power BI dashboards.
+5. Generate business insights.
 
 ---
 
-## Fayllar vazifasi
+## Dashboard Features
 
-| Fayl | Vazifasi | O'zgartirish kerakmi? |
-|------|----------|----------------------|
-| `config.py` | URL, DB, headerlar | Yangi endpoint qo'shganda |
-| `client.py` | API so'rov yuboradi | Yo'q |
-| `loader.py` | DB ga yuklaydi | Yo'q |
-| `main.py` | Hammasini ishga tushiradi | Yangi pipeline qo'shganda |
-| `pipelines/*.py` | ETL logikasi | Har bir jadval uchun |
+### Executive Overview
+
+- Total Sales
+- Average Sales
+- Total Orders
+- Returned Orders
+- Sales by Branches
+- Sales by Managers
+- Trade Dynamics
+
+### Branch Analysis
+
+- Branch performance comparison
+- Sales contribution analysis
+
+### Trade Analytics
+
+- Trend analysis
+- Performance monitoring
+- Historical sales tracking
 
 ---
 
-## Xato chiqsa
+## Project Architecture
 
-| Xato | Sabab | Yechim |
-|------|-------|--------|
-| `[XATO] Status: 401` | Login/parol noto'g'ri | `auth.json` ni tekshiring |
-| `[XATO] Status: 404` | URL noto'g'ri | `config.py` da endpoint ni tekshiring |
-| `connection refused` | PostgreSQL ishlamayapti | DB ni ishga tushiring |
-| `column not found` | API ustun nomini o'zgartirgan | `df.columns` chiqarib tekshiring |
+Source System
+↓
+Python ETL
+↓
+PostgreSQL
+↓
+Power BI Dashboard
+
+---
+
+## Key Insights
+
+- Identified top-performing branches.
+- Compared manager effectiveness.
+- Tracked sales trends over time.
+- Automated reporting workflow.
+
+---
+
+## Author
+
+Yusufjon Tolibjonov
+
+Junior Data Analyst | BI Developer
