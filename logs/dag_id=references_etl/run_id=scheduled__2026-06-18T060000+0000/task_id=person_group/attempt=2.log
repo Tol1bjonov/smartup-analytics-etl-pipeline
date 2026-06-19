@@ -1,0 +1,23 @@
+[2026-06-19T08:19:17.377+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-19T08:19:17.541+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.person_group scheduled__2026-06-18T06:00:00+00:00 [queued]>
+[2026-06-19T08:19:17.586+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.person_group scheduled__2026-06-18T06:00:00+00:00 [queued]>
+[2026-06-19T08:19:17.590+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-19T08:19:17.650+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): person_group> on 2026-06-18 06:00:00+00:00
+[2026-06-19T08:19:17.685+0000] {standard_task_runner.py:64} INFO - Started process 9924 to run task
+[2026-06-19T08:19:17.721+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'person_group', 'scheduled__2026-06-18T06:00:00+00:00', '--job-id', '266', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmpvuem47fg']
+[2026-06-19T08:19:17.759+0000] {standard_task_runner.py:91} INFO - Job 266: Subtask person_group
+[2026-06-19T08:19:18.293+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.person_group scheduled__2026-06-18T06:00:00+00:00 [running]> on host 04e5673ffdd2
+[2026-06-19T08:19:18.798+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='person_group' AIRFLOW_CTX_EXECUTION_DATE='2026-06-18T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-18T06:00:00+00:00'
+[2026-06-19T08:19:18.807+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-19T08:19:18.860+0000] {logging_mixin.py:188} INFO - === Person Group pipeline ===
+[2026-06-19T08:19:18.904+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/anor/mxsx/mr/person_group$export
+[2026-06-19T08:19:23.234+0000] {logging_mixin.py:188} INFO - [OK] 32 ta yozuv olindi
+[2026-06-19T08:19:23.779+0000] {logging_mixin.py:188} INFO - [DB] 'person_groups' — 22 ta qator yuklandi.
+[2026-06-19T08:19:24.033+0000] {logging_mixin.py:188} INFO - [DB] 'person_group_types' — 48 ta qator yuklandi.
+[2026-06-19T08:19:24.034+0000] {logging_mixin.py:188} INFO - === Person Group pipeline tugadi ===
+[2026-06-19T08:19:24.035+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-19T08:19:24.036+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-19T08:19:24.086+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=references_etl, task_id=person_group, run_id=scheduled__2026-06-18T06:00:00+00:00, execution_date=20260618T060000, start_date=20260619T081917, end_date=20260619T081924
+[2026-06-19T08:19:24.199+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-19T08:19:24.220+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-19T08:19:24.223+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

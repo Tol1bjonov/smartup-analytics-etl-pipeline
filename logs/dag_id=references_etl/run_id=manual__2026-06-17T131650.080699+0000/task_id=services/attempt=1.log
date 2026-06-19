@@ -1,0 +1,23 @@
+[2026-06-17T13:16:52.305+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T13:16:52.379+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.services manual__2026-06-17T13:16:50.080699+00:00 [queued]>
+[2026-06-17T13:16:52.399+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.services manual__2026-06-17T13:16:50.080699+00:00 [queued]>
+[2026-06-17T13:16:52.401+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-17T13:16:52.439+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): services> on 2026-06-17 13:16:50.080699+00:00
+[2026-06-17T13:16:52.458+0000] {standard_task_runner.py:64} INFO - Started process 2161 to run task
+[2026-06-17T13:16:52.467+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'services', 'manual__2026-06-17T13:16:50.080699+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmpfi5n_vrz']
+[2026-06-17T13:16:52.475+0000] {standard_task_runner.py:91} INFO - Job 152: Subtask services
+[2026-06-17T13:16:52.645+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.services manual__2026-06-17T13:16:50.080699+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T13:16:52.923+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='services' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T13:16:50.080699+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T13:16:50.080699+00:00'
+[2026-06-17T13:16:52.926+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T13:16:52.952+0000] {logging_mixin.py:188} INFO - === Service pipeline ===
+[2026-06-17T13:16:52.957+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/anor/mxsx/mr/service$export
+[2026-06-17T13:16:56.180+0000] {logging_mixin.py:188} INFO - [OK] 40 ta yozuv olindi
+[2026-06-17T13:16:56.716+0000] {logging_mixin.py:188} INFO - [DB] 'services' — 39 ta qator yuklandi.
+[2026-06-17T13:16:56.916+0000] {logging_mixin.py:188} INFO - [DB] 'service_group' — 10 ta qator yuklandi.
+[2026-06-17T13:16:56.917+0000] {logging_mixin.py:188} INFO - === Service pipeline tugadi ===
+[2026-06-17T13:16:56.918+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-17T13:16:56.920+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T13:16:56.938+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=references_etl, task_id=services, run_id=manual__2026-06-17T13:16:50.080699+00:00, execution_date=20260617T131650, start_date=20260617T131652, end_date=20260617T131656
+[2026-06-17T13:16:56.987+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-17T13:16:57.020+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-17T13:16:57.023+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

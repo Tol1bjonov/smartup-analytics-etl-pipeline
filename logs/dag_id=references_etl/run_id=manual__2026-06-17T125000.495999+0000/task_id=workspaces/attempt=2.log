@@ -1,0 +1,41 @@
+[2026-06-17T12:55:05.768+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T12:55:05.838+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.workspaces manual__2026-06-17T12:50:00.495999+00:00 [queued]>
+[2026-06-17T12:55:05.860+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.workspaces manual__2026-06-17T12:50:00.495999+00:00 [queued]>
+[2026-06-17T12:55:05.861+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-17T12:55:05.887+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): workspaces> on 2026-06-17 12:50:00.495999+00:00
+[2026-06-17T12:55:05.899+0000] {standard_task_runner.py:64} INFO - Started process 1185 to run task
+[2026-06-17T12:55:05.914+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'workspaces', 'manual__2026-06-17T12:50:00.495999+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmpa5yq6nc2']
+[2026-06-17T12:55:05.919+0000] {standard_task_runner.py:91} INFO - Job 76: Subtask workspaces
+[2026-06-17T12:55:06.091+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.workspaces manual__2026-06-17T12:50:00.495999+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T12:55:06.324+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='workspaces' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T12:50:00.495999+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T12:50:00.495999+00:00'
+[2026-06-17T12:55:06.327+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T12:55:06.362+0000] {logging_mixin.py:188} INFO - === Workspace pipeline ===
+[2026-06-17T12:55:06.363+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T12:55:06.366+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/etl/pipelines/workspaces.py", line 50, in run
+    get_headers(),
+    ^^^^^^^^^^^^^
+  File "/opt/etl/config.py", line 43, in get_headers
+    with open("auth.json") as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'auth.json'
+[2026-06-17T12:55:06.416+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=references_etl, task_id=workspaces, run_id=manual__2026-06-17T12:50:00.495999+00:00, execution_date=20260617T125000, start_date=20260617T125505, end_date=20260617T125506
+[2026-06-17T12:55:06.443+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 76 for task workspaces ([Errno 2] No such file or directory: 'auth.json'; 1185)
+[2026-06-17T12:55:06.496+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-17T12:55:06.522+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

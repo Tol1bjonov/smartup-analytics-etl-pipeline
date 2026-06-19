@@ -1,0 +1,39 @@
+[2026-06-17T13:54:29.769+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T13:54:29.811+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sales_etl.visit scheduled__2026-06-16T07:00:00+00:00 [queued]>
+[2026-06-17T13:54:29.822+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sales_etl.visit scheduled__2026-06-16T07:00:00+00:00 [queued]>
+[2026-06-17T13:54:29.824+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-17T13:54:29.839+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): visit> on 2026-06-16 07:00:00+00:00
+[2026-06-17T13:54:29.845+0000] {standard_task_runner.py:64} INFO - Started process 3503 to run task
+[2026-06-17T13:54:29.849+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sales_etl', 'visit', 'scheduled__2026-06-16T07:00:00+00:00', '--job-id', '167', '--raw', '--subdir', 'DAGS_FOLDER/sales_dag.py', '--cfg-path', '/tmp/tmpk6swu7q_']
+[2026-06-17T13:54:29.853+0000] {standard_task_runner.py:91} INFO - Job 167: Subtask visit
+[2026-06-17T13:54:29.950+0000] {task_command.py:426} INFO - Running <TaskInstance: sales_etl.visit scheduled__2026-06-16T07:00:00+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T13:54:30.076+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='sales_etl' AIRFLOW_CTX_TASK_ID='visit' AIRFLOW_CTX_EXECUTION_DATE='2026-06-16T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-16T07:00:00+00:00'
+[2026-06-17T13:54:30.078+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T13:54:30.092+0000] {logging_mixin.py:188} INFO - === Visit pipeline ===
+[2026-06-17T13:54:30.093+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T13:54:30.094+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/etl/pipelines/visit.py", line 262, in run
+    visit_list = fetch_post(ENDPOINTS["visit"], get_headers(), key="visit", body=body)
+                 ^^^^^^^^^^
+NameError: name 'fetch_post' is not defined
+[2026-06-17T13:54:30.114+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=sales_etl, task_id=visit, run_id=scheduled__2026-06-16T07:00:00+00:00, execution_date=20260616T070000, start_date=20260617T135429, end_date=20260617T135430
+[2026-06-17T13:54:30.130+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 167 for task visit (name 'fetch_post' is not defined; 3503)
+[2026-06-17T13:54:30.143+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-17T13:54:30.164+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-17T13:54:30.167+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

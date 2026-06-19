@@ -1,0 +1,23 @@
+[2026-06-17T14:34:55.597+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T14:34:55.656+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: warehouse_etl.logistics manual__2026-06-17T14:34:53.936302+00:00 [queued]>
+[2026-06-17T14:34:55.669+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: warehouse_etl.logistics manual__2026-06-17T14:34:53.936302+00:00 [queued]>
+[2026-06-17T14:34:55.673+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-17T14:34:55.694+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): logistics> on 2026-06-17 14:34:53.936302+00:00
+[2026-06-17T14:34:55.701+0000] {standard_task_runner.py:64} INFO - Started process 4948 to run task
+[2026-06-17T14:34:55.706+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'warehouse_etl', 'logistics', 'manual__2026-06-17T14:34:53.936302+00:00', '--job-id', '186', '--raw', '--subdir', 'DAGS_FOLDER/warehouse_dag.py', '--cfg-path', '/tmp/tmpmc8ly3gq']
+[2026-06-17T14:34:55.709+0000] {standard_task_runner.py:91} INFO - Job 186: Subtask logistics
+[2026-06-17T14:34:55.838+0000] {task_command.py:426} INFO - Running <TaskInstance: warehouse_etl.logistics manual__2026-06-17T14:34:53.936302+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T14:34:55.963+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='warehouse_etl' AIRFLOW_CTX_TASK_ID='logistics' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T14:34:53.936302+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T14:34:53.936302+00:00'
+[2026-06-17T14:34:55.967+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T14:34:55.982+0000] {logging_mixin.py:188} INFO - === Logistics pipeline ===
+[2026-06-17T14:34:55.984+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/trade/txs/tdeal/logistics$export
+[2026-06-17T14:35:00.048+0000] {logging_mixin.py:188} INFO - [OK] 10 ta yozuv olindi
+[2026-06-17T14:35:00.555+0000] {logging_mixin.py:188} INFO - [DB] 'logistics' — 10 ta qator yuklandi.
+[2026-06-17T14:35:00.743+0000] {logging_mixin.py:188} INFO - [DB] 'logistics_deals' — 22 ta qator yuklandi.
+[2026-06-17T14:35:00.744+0000] {logging_mixin.py:188} INFO - === Logistics pipeline tugadi ===
+[2026-06-17T14:35:00.746+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-17T14:35:00.747+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T14:35:00.770+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=warehouse_etl, task_id=logistics, run_id=manual__2026-06-17T14:34:53.936302+00:00, execution_date=20260617T143453, start_date=20260617T143455, end_date=20260617T143500
+[2026-06-17T14:35:00.810+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-17T14:35:00.835+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-17T14:35:00.840+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

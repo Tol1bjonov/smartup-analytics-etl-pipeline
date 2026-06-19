@@ -1,0 +1,23 @@
+[2026-06-19T08:19:13.123+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-19T08:19:13.162+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sales_etl.returns scheduled__2026-06-18T06:00:00+00:00 [queued]>
+[2026-06-19T08:19:13.172+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sales_etl.returns scheduled__2026-06-18T06:00:00+00:00 [queued]>
+[2026-06-19T08:19:13.174+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-19T08:19:13.191+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): returns> on 2026-06-18 06:00:00+00:00
+[2026-06-19T08:19:13.199+0000] {standard_task_runner.py:64} INFO - Started process 9876 to run task
+[2026-06-19T08:19:13.203+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sales_etl', 'returns', 'scheduled__2026-06-18T06:00:00+00:00', '--job-id', '254', '--raw', '--subdir', 'DAGS_FOLDER/sales_dag.py', '--cfg-path', '/tmp/tmpu5sx3x4v']
+[2026-06-19T08:19:13.208+0000] {standard_task_runner.py:91} INFO - Job 254: Subtask returns
+[2026-06-19T08:19:13.380+0000] {task_command.py:426} INFO - Running <TaskInstance: sales_etl.returns scheduled__2026-06-18T06:00:00+00:00 [running]> on host 04e5673ffdd2
+[2026-06-19T08:19:13.783+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='sales_etl' AIRFLOW_CTX_TASK_ID='returns' AIRFLOW_CTX_EXECUTION_DATE='2026-06-18T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-18T06:00:00+00:00'
+[2026-06-19T08:19:13.791+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-19T08:19:13.849+0000] {logging_mixin.py:188} INFO - === Return pipeline ===
+[2026-06-19T08:19:13.863+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/anor/mxsx/mdeal/return$export
+[2026-06-19T08:19:16.425+0000] {logging_mixin.py:188} INFO - [OK] 1 ta yozuv olindi
+[2026-06-19T08:19:19.149+0000] {logging_mixin.py:188} INFO - [DB] 'returns' — 1 ta qator yuklandi.
+[2026-06-19T08:19:19.414+0000] {logging_mixin.py:188} INFO - [DB] 'return_products' — 1 ta qator yuklandi.
+[2026-06-19T08:19:19.415+0000] {logging_mixin.py:188} INFO - === Return pipeline tugadi ===
+[2026-06-19T08:19:19.417+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-19T08:19:19.419+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-19T08:19:19.441+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sales_etl, task_id=returns, run_id=scheduled__2026-06-18T06:00:00+00:00, execution_date=20260618T060000, start_date=20260619T081913, end_date=20260619T081919
+[2026-06-19T08:19:19.480+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-19T08:19:19.507+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-19T08:19:19.510+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,42 @@
+[2026-06-17T12:56:09.015+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T12:56:09.094+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.product_group manual__2026-06-17T12:51:04.181674+00:00 [queued]>
+[2026-06-17T12:56:09.115+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.product_group manual__2026-06-17T12:51:04.181674+00:00 [queued]>
+[2026-06-17T12:56:09.117+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-17T12:56:09.145+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): product_group> on 2026-06-17 12:51:04.181674+00:00
+[2026-06-17T12:56:09.160+0000] {standard_task_runner.py:64} INFO - Started process 1258 to run task
+[2026-06-17T12:56:09.174+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'product_group', 'manual__2026-06-17T12:51:04.181674+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmpwxx36wik']
+[2026-06-17T12:56:09.180+0000] {standard_task_runner.py:91} INFO - Job 88: Subtask product_group
+[2026-06-17T12:56:09.321+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.product_group manual__2026-06-17T12:51:04.181674+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T12:56:09.573+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='product_group' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T12:51:04.181674+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T12:51:04.181674+00:00'
+[2026-06-17T12:56:09.577+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T12:56:09.620+0000] {logging_mixin.py:188} INFO - === Product Group pipeline ===
+[2026-06-17T12:56:09.622+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T12:56:09.624+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/etl/pipelines/product_group.py", line 58, in run
+    raw = fetch(ENDPOINTS["product_group"], get_headers(), key="product_group")
+                                            ^^^^^^^^^^^^^
+  File "/opt/etl/config.py", line 43, in get_headers
+    with open("auth.json") as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'auth.json'
+[2026-06-17T12:56:09.677+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=references_etl, task_id=product_group, run_id=manual__2026-06-17T12:51:04.181674+00:00, execution_date=20260617T125104, start_date=20260617T125609, end_date=20260617T125609
+[2026-06-17T12:56:09.707+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 88 for task product_group ([Errno 2] No such file or directory: 'auth.json'; 1258)
+[2026-06-17T12:56:09.762+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-17T12:56:09.799+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-17T12:56:09.813+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

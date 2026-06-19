@@ -1,0 +1,55 @@
+[2026-06-17T12:58:18.801+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T12:58:18.915+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.product_group manual__2026-06-17T12:58:16.234878+00:00 [queued]>
+[2026-06-17T12:58:18.936+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.product_group manual__2026-06-17T12:58:16.234878+00:00 [queued]>
+[2026-06-17T12:58:18.939+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-17T12:58:18.975+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): product_group> on 2026-06-17 12:58:16.234878+00:00
+[2026-06-17T12:58:18.986+0000] {standard_task_runner.py:64} INFO - Started process 1385 to run task
+[2026-06-17T12:58:18.994+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'product_group', 'manual__2026-06-17T12:58:16.234878+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmp4v67zejl']
+[2026-06-17T12:58:19.005+0000] {standard_task_runner.py:91} INFO - Job 108: Subtask product_group
+[2026-06-17T12:58:19.214+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.product_group manual__2026-06-17T12:58:16.234878+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T12:58:19.412+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='product_group' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T12:58:16.234878+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T12:58:16.234878+00:00'
+[2026-06-17T12:58:19.416+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T12:58:19.446+0000] {logging_mixin.py:188} INFO - === Product Group pipeline ===
+[2026-06-17T12:58:19.451+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/anor/mxsx/mr/product_group$export
+[2026-06-17T12:58:23.361+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T12:58:23.369+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/etl/pipelines/product_group.py", line 58, in run
+    raw = fetch(ENDPOINTS["product_group"], get_headers(), key="product_group")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/etl/client.py", line 131, in fetch
+    raise Exception(f"[XATO] Status: {response.status_code} — {response.text}")
+Exception: [XATO] Status: 500 — ORA-65503: cannot send or receive temporary LOB locators over a database link
+ORA-02063: preceding line from ADGREDIRECT
+ORA-06512: at "SMARTUP5X_ERP.BIRUNI_CORE", line 968
+ORA-06512: at "SMARTUP5X_ERP.BIRUNI_ROUTE", line 436
+ORA-06512: at "SMARTUP5X_ERP.BIRUNI_ROUTE", line 1340
+ORA-06512: at line 1
+
+https://docs.oracle.com/error-help/db/ora-65503/
+[2026-06-17T12:58:23.408+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=references_etl, task_id=product_group, run_id=manual__2026-06-17T12:58:16.234878+00:00, execution_date=20260617T125816, start_date=20260617T125818, end_date=20260617T125823
+[2026-06-17T12:58:23.440+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 108 for task product_group ([XATO] Status: 500 — ORA-65503: cannot send or receive temporary LOB locators over a database link
+ORA-02063: preceding line from ADGREDIRECT
+ORA-06512: at "SMARTUP5X_ERP.BIRUNI_CORE", line 968
+ORA-06512: at "SMARTUP5X_ERP.BIRUNI_ROUTE", line 436
+ORA-06512: at "SMARTUP5X_ERP.BIRUNI_ROUTE", line 1340
+ORA-06512: at line 1
+
+https://docs.oracle.com/error-help/db/ora-65503/; 1385)
+[2026-06-17T12:58:23.478+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-17T12:58:23.515+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

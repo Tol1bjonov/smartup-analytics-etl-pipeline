@@ -1,0 +1,54 @@
+[2026-06-17T13:14:29.957+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T13:14:30.013+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.products manual__2026-06-17T13:08:57.433986+00:00 [queued]>
+[2026-06-17T13:14:30.026+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.products manual__2026-06-17T13:08:57.433986+00:00 [queued]>
+[2026-06-17T13:14:30.030+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-17T13:14:30.049+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): products> on 2026-06-17 13:08:57.433986+00:00
+[2026-06-17T13:14:30.058+0000] {standard_task_runner.py:64} INFO - Started process 2048 to run task
+[2026-06-17T13:14:30.063+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'products', 'manual__2026-06-17T13:08:57.433986+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmp5kytmy5m']
+[2026-06-17T13:14:30.068+0000] {standard_task_runner.py:91} INFO - Job 144: Subtask products
+[2026-06-17T13:14:30.180+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.products manual__2026-06-17T13:08:57.433986+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T13:14:30.356+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='products' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T13:08:57.433986+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T13:08:57.433986+00:00'
+[2026-06-17T13:14:30.358+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T13:14:30.383+0000] {logging_mixin.py:188} INFO - === Products pipeline ===
+[2026-06-17T13:14:30.389+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/anor/mxsx/mr/inventory$export
+[2026-06-17T13:14:47.739+0000] {logging_mixin.py:188} INFO - [OK] 17887 ta yozuv olindi
+[2026-06-17T13:14:48.471+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T13:14:48.472+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/etl/pipelines/products.py", line 134, in run
+    products.to_excel(os.path.join(OUTPUT_DIR, "products.xlsx"),               index=False)
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/generic.py", line 2345, in to_excel
+    formatter.write(
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/formats/excel.py", line 946, in write
+    writer = ExcelWriter(  # type: ignore[abstract]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/excel/_openpyxl.py", line 61, in __init__
+    super().__init__(
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/excel/_base.py", line 1263, in __init__
+    self._handles = get_handle(
+                    ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'CleanedData'
+[2026-06-17T13:14:48.497+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=references_etl, task_id=products, run_id=manual__2026-06-17T13:08:57.433986+00:00, execution_date=20260617T130857, start_date=20260617T131430, end_date=20260617T131448
+[2026-06-17T13:14:48.515+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 144 for task products (Cannot save file into a non-existent directory: 'CleanedData'; 2048)
+[2026-06-17T13:14:48.565+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-17T13:14:48.596+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-17T13:14:48.602+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

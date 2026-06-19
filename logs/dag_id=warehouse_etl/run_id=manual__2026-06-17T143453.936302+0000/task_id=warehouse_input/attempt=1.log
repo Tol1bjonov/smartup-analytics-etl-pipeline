@@ -1,0 +1,23 @@
+[2026-06-17T14:34:55.596+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T14:34:55.653+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: warehouse_etl.warehouse_input manual__2026-06-17T14:34:53.936302+00:00 [queued]>
+[2026-06-17T14:34:55.669+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: warehouse_etl.warehouse_input manual__2026-06-17T14:34:53.936302+00:00 [queued]>
+[2026-06-17T14:34:55.673+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-17T14:34:55.690+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): warehouse_input> on 2026-06-17 14:34:53.936302+00:00
+[2026-06-17T14:34:55.696+0000] {standard_task_runner.py:64} INFO - Started process 4944 to run task
+[2026-06-17T14:34:55.701+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'warehouse_etl', 'warehouse_input', 'manual__2026-06-17T14:34:53.936302+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/warehouse_dag.py', '--cfg-path', '/tmp/tmpl4iibu17']
+[2026-06-17T14:34:55.704+0000] {standard_task_runner.py:91} INFO - Job 185: Subtask warehouse_input
+[2026-06-17T14:34:55.835+0000] {task_command.py:426} INFO - Running <TaskInstance: warehouse_etl.warehouse_input manual__2026-06-17T14:34:53.936302+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T14:34:55.961+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='warehouse_etl' AIRFLOW_CTX_TASK_ID='warehouse_input' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T14:34:53.936302+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T14:34:53.936302+00:00'
+[2026-06-17T14:34:55.962+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T14:34:55.978+0000] {logging_mixin.py:188} INFO - === Warehouse Input pipeline ===
+[2026-06-17T14:34:55.981+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/anor/mxsx/mkw/input$export
+[2026-06-17T14:34:58.281+0000] {logging_mixin.py:188} INFO - [OK] 1 ta yozuv olindi
+[2026-06-17T14:34:58.635+0000] {logging_mixin.py:188} INFO - [DB] 'warehouse_inputs' — 1 ta qator yuklandi.
+[2026-06-17T14:34:58.774+0000] {logging_mixin.py:188} INFO - [DB] 'warehouse_input_items' — 1 ta qator yuklandi.
+[2026-06-17T14:34:58.774+0000] {logging_mixin.py:188} INFO - === Warehouse Input pipeline tugadi ===
+[2026-06-17T14:34:58.775+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-17T14:34:58.776+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T14:34:58.788+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=warehouse_etl, task_id=warehouse_input, run_id=manual__2026-06-17T14:34:53.936302+00:00, execution_date=20260617T143453, start_date=20260617T143455, end_date=20260617T143458
+[2026-06-17T14:34:58.813+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-17T14:34:58.831+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-17T14:34:58.833+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

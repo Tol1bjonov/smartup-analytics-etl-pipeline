@@ -1,0 +1,41 @@
+[2026-06-17T12:42:18.348+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T12:42:18.429+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.producers manual__2026-06-17T12:37:12.761490+00:00 [queued]>
+[2026-06-17T12:42:18.445+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.producers manual__2026-06-17T12:37:12.761490+00:00 [queued]>
+[2026-06-17T12:42:18.448+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-17T12:42:18.475+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): producers> on 2026-06-17 12:37:12.761490+00:00
+[2026-06-17T12:42:18.490+0000] {standard_task_runner.py:64} INFO - Started process 653 to run task
+[2026-06-17T12:42:18.498+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'producers', 'manual__2026-06-17T12:37:12.761490+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmpylr7apmz']
+[2026-06-17T12:42:18.504+0000] {standard_task_runner.py:91} INFO - Job 49: Subtask producers
+[2026-06-17T12:42:18.677+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.producers manual__2026-06-17T12:37:12.761490+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T12:42:18.877+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='producers' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T12:37:12.761490+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T12:37:12.761490+00:00'
+[2026-06-17T12:42:18.880+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T12:42:18.901+0000] {logging_mixin.py:188} INFO - === Producers pipeline ===
+[2026-06-17T12:42:18.902+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T12:42:18.903+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/etl/pipelines/producers.py", line 28, in run
+    raw = fetch(ENDPOINTS["producer"], get_headers(), key="producer")
+                                       ^^^^^^^^^^^^^
+  File "/opt/etl/config.py", line 43, in get_headers
+    with open("auth.json") as f:
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'auth.json'
+[2026-06-17T12:42:18.952+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=references_etl, task_id=producers, run_id=manual__2026-06-17T12:37:12.761490+00:00, execution_date=20260617T123712, start_date=20260617T124218, end_date=20260617T124218
+[2026-06-17T12:42:18.978+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 49 for task producers ([Errno 2] No such file or directory: 'auth.json'; 653)
+[2026-06-17T12:42:19.002+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-17T12:42:19.021+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

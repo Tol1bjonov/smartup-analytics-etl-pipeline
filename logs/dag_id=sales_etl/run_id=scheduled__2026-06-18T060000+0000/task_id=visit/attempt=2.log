@@ -1,0 +1,36 @@
+[2026-06-19T08:19:13.123+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-19T08:19:13.164+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sales_etl.visit scheduled__2026-06-18T06:00:00+00:00 [queued]>
+[2026-06-19T08:19:13.175+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sales_etl.visit scheduled__2026-06-18T06:00:00+00:00 [queued]>
+[2026-06-19T08:19:13.176+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-06-19T08:19:13.192+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): visit> on 2026-06-18 06:00:00+00:00
+[2026-06-19T08:19:13.200+0000] {standard_task_runner.py:64} INFO - Started process 9877 to run task
+[2026-06-19T08:19:13.207+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sales_etl', 'visit', 'scheduled__2026-06-18T06:00:00+00:00', '--job-id', '255', '--raw', '--subdir', 'DAGS_FOLDER/sales_dag.py', '--cfg-path', '/tmp/tmp2py6nk3t']
+[2026-06-19T08:19:13.211+0000] {standard_task_runner.py:91} INFO - Job 255: Subtask visit
+[2026-06-19T08:19:13.381+0000] {task_command.py:426} INFO - Running <TaskInstance: sales_etl.visit scheduled__2026-06-18T06:00:00+00:00 [running]> on host 04e5673ffdd2
+[2026-06-19T08:19:13.881+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='sales_etl' AIRFLOW_CTX_TASK_ID='visit' AIRFLOW_CTX_EXECUTION_DATE='2026-06-18T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-18T06:00:00+00:00'
+[2026-06-19T08:19:13.891+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-19T08:19:13.994+0000] {logging_mixin.py:188} INFO - === Visit pipeline ===
+[2026-06-19T08:19:14.007+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/trade/txs/tvt/visit$export
+[2026-06-19T08:19:16.642+0000] {logging_mixin.py:188} INFO - [OK] 4 ta yozuv olindi
+[2026-06-19T08:19:19.122+0000] {logging_mixin.py:188} INFO - [DB] 'visits' — 4 ta qator yuklandi.
+[2026-06-19T08:19:19.539+0000] {logging_mixin.py:188} INFO - [DB] 'visit_person_types' — 27 ta qator yuklandi.
+[2026-06-19T08:19:19.772+0000] {logging_mixin.py:188} INFO - [DB] 'visit_stocks' — 6 ta qator yuklandi.
+[2026-06-19T08:19:19.773+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_merchandisings' — bo'sh
+[2026-06-19T08:19:19.773+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_assortments' — bo'sh
+[2026-06-19T08:19:19.774+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_planograms' — bo'sh
+[2026-06-19T08:19:19.774+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_planogram_equipments' — bo'sh
+[2026-06-19T08:19:19.775+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_planogram_products' — bo'sh
+[2026-06-19T08:19:19.775+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_shelf_own' — bo'sh
+[2026-06-19T08:19:19.776+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_shelf_competitor' — bo'sh
+[2026-06-19T08:19:19.776+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_price_tags' — bo'sh
+[2026-06-19T08:19:19.776+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_displays' — bo'sh
+[2026-06-19T08:19:19.777+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_quizzes' — bo'sh
+[2026-06-19T08:19:19.777+0000] {logging_mixin.py:188} INFO - [SKIP] 'visit_equipments' — bo'sh
+[2026-06-19T08:19:20.014+0000] {logging_mixin.py:188} INFO - [DB] 'visit_comments' — 4 ta qator yuklandi.
+[2026-06-19T08:19:20.014+0000] {logging_mixin.py:188} INFO - === Visit pipeline tugadi ===
+[2026-06-19T08:19:20.015+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-19T08:19:20.016+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-19T08:19:20.031+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sales_etl, task_id=visit, run_id=scheduled__2026-06-18T06:00:00+00:00, execution_date=20260618T060000, start_date=20260619T081913, end_date=20260619T081920
+[2026-06-19T08:19:20.076+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-19T08:19:20.099+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-19T08:19:20.103+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

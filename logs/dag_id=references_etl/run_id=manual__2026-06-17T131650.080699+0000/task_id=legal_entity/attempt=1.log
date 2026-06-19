@@ -1,0 +1,25 @@
+[2026-06-17T13:16:52.238+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-17T13:16:52.322+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: references_etl.legal_entity manual__2026-06-17T13:16:50.080699+00:00 [queued]>
+[2026-06-17T13:16:52.339+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: references_etl.legal_entity manual__2026-06-17T13:16:50.080699+00:00 [queued]>
+[2026-06-17T13:16:52.343+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-06-17T13:16:52.375+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): legal_entity> on 2026-06-17 13:16:50.080699+00:00
+[2026-06-17T13:16:52.391+0000] {standard_task_runner.py:64} INFO - Started process 2156 to run task
+[2026-06-17T13:16:52.398+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'references_etl', 'legal_entity', 'manual__2026-06-17T13:16:50.080699+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/references_dag.py', '--cfg-path', '/tmp/tmp_2gvyp4w']
+[2026-06-17T13:16:52.404+0000] {standard_task_runner.py:91} INFO - Job 148: Subtask legal_entity
+[2026-06-17T13:16:52.572+0000] {task_command.py:426} INFO - Running <TaskInstance: references_etl.legal_entity manual__2026-06-17T13:16:50.080699+00:00 [running]> on host 04e5673ffdd2
+[2026-06-17T13:16:52.825+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='yusufjon' AIRFLOW_CTX_DAG_ID='references_etl' AIRFLOW_CTX_TASK_ID='legal_entity' AIRFLOW_CTX_EXECUTION_DATE='2026-06-17T13:16:50.080699+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-17T13:16:50.080699+00:00'
+[2026-06-17T13:16:52.839+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-17T13:16:52.868+0000] {logging_mixin.py:188} INFO - === Legal Entity pipeline ===
+[2026-06-17T13:16:52.882+0000] {logging_mixin.py:188} INFO - [FETCH] https://smartup.online/b/anor/mxsx/mr/legal_person$export
+[2026-06-17T13:17:28.326+0000] {logging_mixin.py:188} INFO - [OK] 31846 ta yozuv olindi
+[2026-06-17T13:17:49.334+0000] {logging_mixin.py:188} INFO - [DB] 'legal_entities' — 31846 ta qator yuklandi.
+[2026-06-17T13:17:50.423+0000] {logging_mixin.py:188} INFO - [DB] 'legal_entity_group' — 37804 ta qator yuklandi.
+[2026-06-17T13:17:50.679+0000] {logging_mixin.py:188} INFO - [DB] 'legal_entity_bank_account' — 281 ta qator yuklandi.
+[2026-06-17T13:17:50.915+0000] {logging_mixin.py:188} INFO - [DB] 'legal_entity_room' — 3927 ta qator yuklandi.
+[2026-06-17T13:17:50.916+0000] {logging_mixin.py:188} INFO - === Legal Entity pipeline tugadi ===
+[2026-06-17T13:17:50.941+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-17T13:17:50.942+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-17T13:17:50.954+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=references_etl, task_id=legal_entity, run_id=manual__2026-06-17T13:16:50.080699+00:00, execution_date=20260617T131650, start_date=20260617T131652, end_date=20260617T131750
+[2026-06-17T13:17:51.024+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-17T13:17:51.052+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-17T13:17:51.056+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
