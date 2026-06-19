@@ -3988,3 +3988,325 @@
 [2026-06-19T13:28:30.598+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:28:30.598+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2026-06-19T13:28:30.615+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:28:30.614+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
 [2026-06-19T13:28:30.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.528 seconds
+[2026-06-19T13:29:00.821+0000] {processor.py:161} INFO - Started process (PID=20016) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:29:00.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:29:00.824+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:29:00.824+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:29:01.317+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:29:01.354+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:29:01.354+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:29:01.374+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:29:01.374+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:29:01.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.589 seconds
+[2026-06-19T13:29:32.315+0000] {processor.py:161} INFO - Started process (PID=20034) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:29:32.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:29:32.322+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:29:32.321+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:29:32.862+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:29:32.887+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:29:32.886+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:29:32.908+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:29:32.907+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:29:32.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.627 seconds
+[2026-06-19T13:30:03.298+0000] {processor.py:161} INFO - Started process (PID=20052) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:30:03.300+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:30:03.303+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:30:03.302+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:30:03.798+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:30:03.822+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:30:03.821+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:30:03.838+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:30:03.838+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:30:03.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.571 seconds
+[2026-06-19T13:30:33.959+0000] {processor.py:161} INFO - Started process (PID=20070) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:30:33.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:30:33.962+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:30:33.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:30:34.439+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:30:34.477+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:30:34.476+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:30:34.498+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:30:34.498+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:30:34.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.567 seconds
+[2026-06-19T13:31:04.651+0000] {processor.py:161} INFO - Started process (PID=20088) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:31:04.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:31:04.654+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:31:04.653+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:31:05.126+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:31:05.151+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:31:05.151+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:31:05.169+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:31:05.169+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:31:05.189+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.543 seconds
+[2026-06-19T13:31:35.881+0000] {processor.py:161} INFO - Started process (PID=20106) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:31:35.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:31:35.884+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:31:35.884+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:31:36.368+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:31:36.391+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:31:36.390+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:31:36.411+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:31:36.410+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:31:36.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.569 seconds
+[2026-06-19T13:32:07.239+0000] {processor.py:161} INFO - Started process (PID=20124) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:32:07.241+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:32:07.242+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:32:07.242+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:32:07.740+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:32:07.768+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:32:07.768+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:32:07.787+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:32:07.787+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:32:07.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.577 seconds
+[2026-06-19T13:32:38.004+0000] {processor.py:161} INFO - Started process (PID=20142) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:32:38.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:32:38.006+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:32:38.006+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:32:38.465+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:32:38.489+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:32:38.488+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:32:38.505+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:32:38.505+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:32:38.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.534 seconds
+[2026-06-19T13:33:09.047+0000] {processor.py:161} INFO - Started process (PID=20160) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:33:09.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:33:09.050+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:33:09.049+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:33:09.469+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:33:09.492+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:33:09.492+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:33:09.507+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:33:09.506+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:33:09.523+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.482 seconds
+[2026-06-19T13:33:40.012+0000] {processor.py:161} INFO - Started process (PID=20178) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:33:40.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:33:40.015+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:33:40.014+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:33:40.484+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:33:40.511+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:33:40.510+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:33:40.527+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:33:40.526+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:33:40.548+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.541 seconds
+[2026-06-19T13:34:10.796+0000] {processor.py:161} INFO - Started process (PID=20196) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:34:10.798+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:34:10.799+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:34:10.799+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:34:11.297+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:34:11.317+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:34:11.317+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:34:11.332+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:34:11.332+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:34:11.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.569 seconds
+[2026-06-19T13:34:42.255+0000] {processor.py:161} INFO - Started process (PID=20214) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:34:42.256+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:34:42.257+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:34:42.257+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:34:42.823+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:34:42.852+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:34:42.851+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:34:42.871+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:34:42.871+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:34:42.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.645 seconds
+[2026-06-19T13:35:13.031+0000] {processor.py:161} INFO - Started process (PID=20232) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:35:13.033+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:35:13.034+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:35:13.034+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:35:13.477+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:35:13.498+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:35:13.497+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:35:13.514+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:35:13.514+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:35:13.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.511 seconds
+[2026-06-19T13:35:44.009+0000] {processor.py:161} INFO - Started process (PID=20250) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:35:44.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:35:44.012+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:35:44.011+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:35:44.457+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:35:44.492+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:35:44.492+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:35:44.511+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:35:44.511+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:35:44.531+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.528 seconds
+[2026-06-19T13:36:15.088+0000] {processor.py:161} INFO - Started process (PID=20268) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:36:15.090+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:36:15.091+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:36:15.091+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:36:15.631+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:36:15.657+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:36:15.657+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:36:15.675+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:36:15.674+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:36:15.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.619 seconds
+[2026-06-19T13:36:45.779+0000] {processor.py:161} INFO - Started process (PID=20286) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:36:45.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:36:45.782+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:36:45.782+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:36:46.256+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:36:46.280+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:36:46.279+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:36:46.300+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:36:46.299+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:36:46.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.548 seconds
+[2026-06-19T13:37:16.432+0000] {processor.py:161} INFO - Started process (PID=20304) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:37:16.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:37:16.434+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:37:16.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:37:16.944+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:37:16.968+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:37:16.967+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:37:16.987+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:37:16.987+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:37:17.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.587 seconds
+[2026-06-19T13:37:47.136+0000] {processor.py:161} INFO - Started process (PID=20322) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:37:47.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:37:47.139+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:37:47.139+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:37:47.582+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:37:47.604+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:37:47.604+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:37:47.623+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:37:47.622+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:37:47.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.515 seconds
+[2026-06-19T13:38:18.140+0000] {processor.py:161} INFO - Started process (PID=20340) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:38:18.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:38:18.145+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:38:18.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:38:18.626+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:38:18.651+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:38:18.650+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:38:18.670+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:38:18.670+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:38:18.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.556 seconds
+[2026-06-19T13:38:49.248+0000] {processor.py:161} INFO - Started process (PID=20358) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:38:49.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:38:49.250+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:38:49.250+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:38:49.748+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:38:49.772+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:38:49.772+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:38:49.791+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:38:49.791+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:38:49.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.573 seconds
+[2026-06-19T13:39:20.218+0000] {processor.py:161} INFO - Started process (PID=20376) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:39:20.219+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:39:20.221+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:39:20.221+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:39:20.779+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:39:20.812+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:39:20.812+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:39:20.828+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:39:20.828+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:39:20.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.646 seconds
+[2026-06-19T13:39:51.036+0000] {processor.py:161} INFO - Started process (PID=20394) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:39:51.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:39:51.039+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:39:51.039+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:39:51.596+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:39:51.623+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:39:51.622+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:39:51.641+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:39:51.641+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:39:51.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.637 seconds
+[2026-06-19T13:40:21.793+0000] {processor.py:161} INFO - Started process (PID=20412) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:40:21.795+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:40:21.797+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:40:21.797+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:40:22.321+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:40:22.348+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:40:22.347+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:40:22.366+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:40:22.366+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:40:22.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.603 seconds
+[2026-06-19T13:40:52.615+0000] {processor.py:161} INFO - Started process (PID=20430) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:40:52.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:40:52.617+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:40:52.617+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:40:53.090+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:40:53.126+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:40:53.126+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:40:53.145+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:40:53.145+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:40:53.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.558 seconds
+[2026-06-19T13:41:23.392+0000] {processor.py:161} INFO - Started process (PID=20448) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:41:23.394+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:41:23.395+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:41:23.395+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:41:23.818+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:41:23.843+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:41:23.843+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:41:23.862+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:41:23.862+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:41:23.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.494 seconds
+[2026-06-19T13:41:54.396+0000] {processor.py:161} INFO - Started process (PID=20466) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:41:54.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:41:54.399+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:41:54.398+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:41:54.877+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:41:54.900+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:41:54.900+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:41:54.917+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:41:54.917+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:41:54.934+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.546 seconds
+[2026-06-19T13:42:25.228+0000] {processor.py:161} INFO - Started process (PID=20484) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:42:25.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:42:25.230+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:42:25.230+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:42:25.692+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:42:25.716+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:42:25.715+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:42:25.732+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:42:25.732+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:42:25.755+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.533 seconds
+[2026-06-19T13:42:56.167+0000] {processor.py:161} INFO - Started process (PID=20502) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:42:56.168+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:42:56.169+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:42:56.169+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:42:56.634+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:42:56.657+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:42:56.657+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:42:56.675+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:42:56.674+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:42:56.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.537 seconds
+[2026-06-19T13:43:27.049+0000] {processor.py:161} INFO - Started process (PID=20520) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:43:27.050+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:43:27.051+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:43:27.051+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:43:27.523+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:43:27.544+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:43:27.544+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:43:27.561+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:43:27.561+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:43:27.583+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.539 seconds
+[2026-06-19T13:43:57.769+0000] {processor.py:161} INFO - Started process (PID=20538) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:43:57.772+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:43:57.774+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:43:57.773+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:43:58.349+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:43:58.373+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:43:58.373+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:43:58.394+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:43:58.394+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:43:58.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.656 seconds
+[2026-06-19T13:44:28.534+0000] {processor.py:161} INFO - Started process (PID=20556) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:44:28.535+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:44:28.536+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:44:28.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:44:28.967+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:44:28.989+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:44:28.989+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:44:29.007+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:44:29.007+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:44:29.026+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.497 seconds
+[2026-06-19T13:44:59.328+0000] {processor.py:161} INFO - Started process (PID=20574) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:44:59.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:44:59.332+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:44:59.331+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:44:59.947+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:44:59.983+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:44:59.983+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:45:00.001+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:45:00.001+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:45:00.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.706 seconds
+[2026-06-19T13:45:30.661+0000] {processor.py:161} INFO - Started process (PID=20592) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:45:30.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:45:30.664+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:45:30.663+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:45:31.214+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:45:31.244+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:45:31.244+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:45:31.268+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:45:31.267+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:45:31.290+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.638 seconds
+[2026-06-19T13:46:01.897+0000] {processor.py:161} INFO - Started process (PID=20610) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:46:01.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:46:01.900+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:46:01.899+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:46:02.519+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:46:02.546+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:46:02.545+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:46:02.568+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:46:02.568+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:46:02.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.698 seconds
+[2026-06-19T13:46:32.928+0000] {processor.py:161} INFO - Started process (PID=20628) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:46:32.930+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:46:32.934+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:46:32.934+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:46:33.527+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:46:33.554+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:46:33.554+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:46:33.575+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:46:33.575+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:46:33.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.686 seconds
+[2026-06-19T13:47:03.877+0000] {processor.py:161} INFO - Started process (PID=20646) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:47:03.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:47:03.879+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:47:03.879+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:47:04.442+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:47:04.471+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:47:04.470+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:47:04.491+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:47:04.491+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:47:04.516+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.646 seconds
+[2026-06-19T13:47:34.784+0000] {processor.py:161} INFO - Started process (PID=20664) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:47:34.787+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:47:34.789+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:47:34.788+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:47:35.339+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:47:35.368+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:47:35.368+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:47:35.389+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:47:35.389+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:47:35.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.650 seconds
+[2026-06-19T13:48:05.695+0000] {processor.py:161} INFO - Started process (PID=20682) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:48:05.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:48:05.698+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:48:05.697+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:48:06.228+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:48:06.252+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:48:06.252+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:48:06.270+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:48:06.270+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:48:06.290+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.604 seconds
+[2026-06-19T13:48:36.482+0000] {processor.py:161} INFO - Started process (PID=20700) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:48:36.488+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:48:36.490+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:48:36.490+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:48:37.071+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:48:37.097+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:48:37.096+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:48:37.113+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:48:37.113+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:48:37.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.664 seconds
+[2026-06-19T13:49:07.287+0000] {processor.py:161} INFO - Started process (PID=20718) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:49:07.290+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:49:07.294+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:49:07.294+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:49:07.901+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:49:07.940+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:49:07.939+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:49:07.962+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:49:07.962+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:49:07.991+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.716 seconds
+[2026-06-19T13:49:38.169+0000] {processor.py:161} INFO - Started process (PID=20736) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:49:38.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:49:38.175+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:49:38.174+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:49:38.858+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:49:38.890+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:49:38.889+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:49:38.911+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:49:38.910+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:49:38.943+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.787 seconds
+[2026-06-19T13:50:09.028+0000] {processor.py:161} INFO - Started process (PID=20754) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:50:09.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:50:09.031+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:50:09.031+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:50:09.618+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:50:09.647+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:50:09.647+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:50:09.665+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:50:09.665+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:50:09.694+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.672 seconds
+[2026-06-19T13:50:40.203+0000] {processor.py:161} INFO - Started process (PID=20772) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:50:40.205+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:50:40.209+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:50:40.209+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:50:40.764+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:50:40.786+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:50:40.786+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:50:40.805+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:50:40.805+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:50:40.823+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.630 seconds
+[2026-06-19T13:51:11.039+0000] {processor.py:161} INFO - Started process (PID=20790) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:51:11.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:51:11.043+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:51:11.042+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:51:11.587+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:51:11.621+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:51:11.621+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:51:11.639+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:51:11.639+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:51:11.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.630 seconds
+[2026-06-19T13:51:42.000+0000] {processor.py:161} INFO - Started process (PID=20808) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:51:42.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:51:42.006+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:51:42.006+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:51:42.645+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:51:42.681+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:51:42.681+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:51:42.702+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:51:42.701+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:51:42.730+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.741 seconds
+[2026-06-19T13:52:12.889+0000] {processor.py:161} INFO - Started process (PID=20826) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:52:12.893+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-06-19T13:52:12.896+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:52:12.895+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:52:13.696+0000] {processor.py:840} INFO - DAG(s) 'warehouse_etl' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-06-19T13:52:13.743+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:52:13.743+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-19T13:52:13.770+0000] {logging_mixin.py:188} INFO - [2026-06-19T13:52:13.770+0000] {dag.py:3947} INFO - Setting next_dagrun for warehouse_etl to 2026-06-19 06:00:00+00:00, run_after=2026-06-20 06:00:00+00:00
+[2026-06-19T13:52:13.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.929 seconds

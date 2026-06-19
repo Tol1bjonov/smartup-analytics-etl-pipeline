@@ -10693,3 +10693,349 @@ File Path                              PID  Runtime      # DAGs    # Errors  Las
 /opt/airflow/dags/sales_dag.py                                1           0  0.63s           2026-06-19T13:11:30
 /opt/airflow/dags/warehouse_dag.py   19404  0.00s             1           0  0.51s           2026-06-19T13:11:01
 ================================================================================
+[2026-06-19T13:12:01.618+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.73s           2026-06-19T13:11:40
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.60s           2026-06-19T13:11:32
+/opt/airflow/dags/sales_dag.py                                1           0  0.58s           2026-06-19T13:12:01
+================================================================================
+[2026-06-19T13:12:32.109+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sales_dag.py       19434  0.01s             1           0  0.58s           2026-06-19T13:12:01
+/opt/airflow/dags/references_dag.py                           1           0  0.57s           2026-06-19T13:12:12
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.55s           2026-06-19T13:12:02
+================================================================================
+[2026-06-19T13:13:02.135+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.71s           2026-06-19T13:12:43
+/opt/airflow/dags/sales_dag.py                                1           0  0.64s           2026-06-19T13:12:32
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.59s           2026-06-19T13:12:33
+================================================================================
+[2026-06-19T13:13:32.433+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.69s           2026-06-19T13:13:14
+/opt/airflow/dags/sales_dag.py                                1           0  0.59s           2026-06-19T13:13:03
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.54s           2026-06-19T13:13:04
+================================================================================
+[2026-06-19T13:14:02.595+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.64s           2026-06-19T13:13:45
+/opt/airflow/dags/sales_dag.py                                1           0  0.58s           2026-06-19T13:13:34
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.53s           2026-06-19T13:13:34
+================================================================================
+[2026-06-19T13:14:32.836+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.69s           2026-06-19T13:14:16
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.64s           2026-06-19T13:14:05
+/opt/airflow/dags/sales_dag.py                                1           0  0.59s           2026-06-19T13:14:05
+================================================================================
+[2026-06-19T13:15:03.433+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.67s           2026-06-19T13:14:47
+/opt/airflow/dags/sales_dag.py                                1           0  0.63s           2026-06-19T13:14:35
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.54s           2026-06-19T13:14:36
+================================================================================
+[2026-06-19T13:15:06.487+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-06-19T13:15:06.541+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-06-19T13:15:33.746+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.64s           2026-06-19T13:15:07
+/opt/airflow/dags/references_dag.py                           1           0  0.63s           2026-06-19T13:15:18
+/opt/airflow/dags/sales_dag.py                                1           0  0.61s           2026-06-19T13:15:07
+================================================================================
+[2026-06-19T13:16:04.118+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.64s           2026-06-19T13:15:48
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.61s           2026-06-19T13:15:38
+/opt/airflow/dags/sales_dag.py                                1           0  0.53s           2026-06-19T13:15:38
+================================================================================
+[2026-06-19T13:16:34.737+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.68s           2026-06-19T13:16:19
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.60s           2026-06-19T13:16:08
+/opt/airflow/dags/sales_dag.py                                1           0  0.55s           2026-06-19T13:16:08
+================================================================================
+[2026-06-19T13:17:05.146+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.72s           2026-06-19T13:16:50
+/opt/airflow/dags/sales_dag.py                                1           0  0.71s           2026-06-19T13:16:39
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.66s           2026-06-19T13:16:39
+================================================================================
+[2026-06-19T13:17:35.804+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.83s           2026-06-19T13:17:21
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.65s           2026-06-19T13:17:10
+/opt/airflow/dags/sales_dag.py                                1           0  0.58s           2026-06-19T13:17:10
+================================================================================
+[2026-06-19T13:18:05.892+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.91s           2026-06-19T13:17:52
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.62s           2026-06-19T13:17:41
+/opt/airflow/dags/sales_dag.py                                1           0  0.60s           2026-06-19T13:17:41
+================================================================================
+[2026-06-19T13:18:36.513+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.75s           2026-06-19T13:18:12
+/opt/airflow/dags/sales_dag.py                                1           0  0.74s           2026-06-19T13:18:12
+/opt/airflow/dags/references_dag.py                           1           0  0.60s           2026-06-19T13:18:23
+================================================================================
+[2026-06-19T13:19:06.741+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.82s           2026-06-19T13:18:54
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.59s           2026-06-19T13:18:43
+/opt/airflow/dags/sales_dag.py                                1           0  0.56s           2026-06-19T13:18:43
+================================================================================
+[2026-06-19T13:19:36.912+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.76s           2026-06-19T13:19:25
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.72s           2026-06-19T13:19:14
+/opt/airflow/dags/sales_dag.py                                1           0  0.65s           2026-06-19T13:19:14
+================================================================================
+[2026-06-19T13:20:07.351+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-06-19T13:20:07.447+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-06-19T13:20:07.471+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.69s           2026-06-19T13:19:56
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.65s           2026-06-19T13:19:45
+/opt/airflow/dags/sales_dag.py                                1           0  0.62s           2026-06-19T13:19:45
+================================================================================
+[2026-06-19T13:20:38.001+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.69s           2026-06-19T13:20:27
+/opt/airflow/dags/sales_dag.py                                1           0  0.61s           2026-06-19T13:20:16
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.59s           2026-06-19T13:20:16
+================================================================================
+[2026-06-19T13:21:08.332+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.84s           2026-06-19T13:20:58
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.57s           2026-06-19T13:20:47
+/opt/airflow/dags/sales_dag.py                                1           0  0.55s           2026-06-19T13:20:47
+================================================================================
+[2026-06-19T13:21:38.992+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.73s           2026-06-19T13:21:29
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.69s           2026-06-19T13:21:18
+/opt/airflow/dags/sales_dag.py                                1           0  0.64s           2026-06-19T13:21:18
+================================================================================
+[2026-06-19T13:22:09.137+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.75s           2026-06-19T13:21:59
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.63s           2026-06-19T13:21:49
+/opt/airflow/dags/sales_dag.py                                1           0  0.59s           2026-06-19T13:21:49
+================================================================================
+[2026-06-19T13:22:39.286+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.66s           2026-06-19T13:22:30
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.64s           2026-06-19T13:22:19
+/opt/airflow/dags/sales_dag.py                                1           0  0.61s           2026-06-19T13:22:19
+================================================================================
+[2026-06-19T13:23:09.563+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.66s           2026-06-19T13:22:50
+/opt/airflow/dags/sales_dag.py                                1           0  0.62s           2026-06-19T13:22:50
+/opt/airflow/dags/references_dag.py                           1           0  0.62s           2026-06-19T13:23:01
+================================================================================
+[2026-06-19T13:23:39.605+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.61s           2026-06-19T13:23:21
+/opt/airflow/dags/references_dag.py                           1           0  0.59s           2026-06-19T13:23:32
+/opt/airflow/dags/sales_dag.py                                1           0  0.57s           2026-06-19T13:23:21
+================================================================================
+[2026-06-19T13:24:09.951+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.69s           2026-06-19T13:23:52
+/opt/airflow/dags/sales_dag.py                                1           0  0.62s           2026-06-19T13:23:52
+/opt/airflow/dags/references_dag.py                           1           0  0.59s           2026-06-19T13:24:02
+================================================================================
+[2026-06-19T13:24:40.010+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.79s           2026-06-19T13:24:33
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.59s           2026-06-19T13:24:22
+/opt/airflow/dags/sales_dag.py                                1           0  0.56s           2026-06-19T13:24:22
+================================================================================
+[2026-06-19T13:25:07.570+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-06-19T13:25:07.616+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-06-19T13:25:10.663+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.74s           2026-06-19T13:25:04
+/opt/airflow/dags/sales_dag.py                                1           0  0.54s           2026-06-19T13:24:53
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.53s           2026-06-19T13:24:53
+================================================================================
+[2026-06-19T13:25:41.336+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.74s           2026-06-19T13:25:35
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.60s           2026-06-19T13:25:24
+/opt/airflow/dags/sales_dag.py                                1           0  0.56s           2026-06-19T13:25:24
+================================================================================
+[2026-06-19T13:26:11.366+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.67s           2026-06-19T13:26:06
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.59s           2026-06-19T13:25:55
+/opt/airflow/dags/sales_dag.py                                1           0  0.54s           2026-06-19T13:25:55
+================================================================================
+[2026-06-19T13:26:41.572+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.73s           2026-06-19T13:26:26
+/opt/airflow/dags/sales_dag.py                                1           0  0.65s           2026-06-19T13:26:26
+/opt/airflow/dags/references_dag.py                           1           0  0.58s           2026-06-19T13:26:38
+================================================================================
+[2026-06-19T13:27:11.644+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.71s           2026-06-19T13:26:57
+/opt/airflow/dags/sales_dag.py                                1           0  0.68s           2026-06-19T13:26:57
+/opt/airflow/dags/references_dag.py                           1           0  0.60s           2026-06-19T13:27:09
+================================================================================
+[2026-06-19T13:27:41.932+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.86s           2026-06-19T13:27:40
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.73s           2026-06-19T13:27:28
+/opt/airflow/dags/sales_dag.py                                1           0  0.72s           2026-06-19T13:27:28
+================================================================================
+[2026-06-19T13:28:11.965+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.70s           2026-06-19T13:28:11
+/opt/airflow/dags/sales_dag.py                                1           0  0.67s           2026-06-19T13:27:59
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.62s           2026-06-19T13:27:59
+================================================================================
+[2026-06-19T13:28:42.320+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/references_dag.py                           1           0  0.63s           2026-06-19T13:28:42
+/opt/airflow/dags/sales_dag.py                                1           0  0.58s           2026-06-19T13:28:30
+/opt/airflow/dags/warehouse_dag.py                            1           0  0.57s           2026-06-19T13:28:30
+================================================================================
